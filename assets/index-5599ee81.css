@@ -1,0 +1,169 @@
+@import"https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400;500;700;800;900&display=swap";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Alegreya Sans, sans-serif
+}
+
+body {
+    background: azure;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    flex-direction: column;
+    flex-wrap: wrap
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: inherit;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px
+}
+
+.header p {
+    color: #333;
+    font-family: monospace;
+    font-size: 20px
+}
+
+#app {
+    width: 90%;
+    height: 100vh;
+    background: #fff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px #00000080;
+    -webkit-transition: all .6s cubic-bezier(.165, .84, .44, 1);
+    transition: all .6s cubic-bezier(.165, .84, .44, 1)
+}
+
+#app:hover {
+    opacity: 1;
+    box-shadow: 0 1px 2px #0003;
+    -webkit-transform: scale(.99, .99);
+    transform: scale(.99);
+    cursor: pointer
+}
+
+#chat_container {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    padding-bottom: 20px;
+    scroll-behavior: smooth
+}
+
+#chat_container::-webkit-scrollbar {
+    display: none
+}
+
+.wrapper {
+    width: 100%;
+    padding: 15px
+}
+
+.ai {
+    background: #40414F
+}
+
+.chat {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px
+}
+
+.profile {
+    width: 36px;
+    height: 36px;
+    border-radius: 5px;
+    background: #5436DA;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.ai .profile {
+    background: #10a37f
+}
+
+.profile img {
+    width: 60%;
+    height: 60%;
+    object-fit: contain
+}
+
+.message {
+    flex: 1;
+    font-size: 20px;
+    max-width: 100%;
+    overflow-x: scroll;
+    white-space: pre-wrap;
+    -ms-overflow-style: none;
+    scrollbar-width: none
+}
+
+.user {
+    color: #333
+}
+
+.bot {
+    color: #fff
+}
+
+.message::-webkit-scrollbar {
+    display: none
+}
+
+form {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 10px;
+    background: #40414F;
+    display: flex;
+    flex-direction: row;
+    gap: 10px
+}
+
+textarea {
+    width: 100%;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px;
+    background: transparent;
+    border-radius: 5px;
+    border: none;
+    outline: none
+}
+
+button {
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    background: transparent
+}
+
+form img {
+    width: 30px;
+    height: 30px
+}
